@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Audio</title>
+</head>
+<body>
+    <!--    Tone js -->
+    <!--    <button id="playNote">Play Note</button>-->
+    <!--    <button id="playLoop">Play Loop</button>-->
+    <!--    <button id="playSynth">Play Synth</button>-->
+
+    <!--  GLOBALS  -->
+    <div>
+        <label for="bpm">BPM:</label>
+        <input id="bpm" type="number"/>
+    </div>
+
+    <!--  METRONOME  -->
+    <div>
+        <button id="metronome">metronome</button>
+    </div>
+
+    <!--    OSC   -->
+    <div>
+        <button id="play">PLAY</button>
+        <button id="stop" hidden>STOP</button>
+
+        <label for="type">Type</label>
+        <select name="type" id="type">
+            <option value="sine" selected>sine</option>
+            <option value="square">square</option>
+            <option value="triangle">triangle</option>
+        </select>
+
+        <label for="key">Key</label>
+        <select name="key" id="key">
+            <option value="sine" selected>C4</option>
+            <option value="square">D4</option>
+            <option value="triangle">E4</option>
+        </select>
+
+        <div>Partials</div>
+        <div>Partial Count</div>
+    </div>
+
+    <!--    EFFECTS   -->
+    <button id="dist">DIST</button>
+    <button id="reverb">REVERB</button>
+
+    <!--    scripts -->
+    <script src="./global.ts" async defer></script>
+    <script src="./metronome.ts" async defer></script>
+    <script src="./dist.ts" async defer></script>
+    <script src="./reverb.ts" async defer></script>
+    <script src="./osc_2.ts" async defer></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "exclude": ["*.test.ts"],
+  "compilerOptions": {
+    "declaration": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es2015",
+    "lib": [
+      "es2017",
+      "dom"
+    ]
+  }
+}

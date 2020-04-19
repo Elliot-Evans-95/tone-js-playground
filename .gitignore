@@ -1,7 +1,5 @@
 .DS_Store
 .cache/
-.idea/
-daw-design.sketch
 dist/
 node_modules/
 yarn-error.log
